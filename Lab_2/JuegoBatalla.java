@@ -65,7 +65,7 @@ public class JuegoBatalla{
             }
         }while(opcion != 4);
                 
-    }/*El método main es una interfaz en la cual el usuario por medio de numeración, elige cual opción quiere realizar. */
+    }//El método main es una interfaz en la cual el usuario por medio de numeración, elige cuál opción quiere realizar.
     
     //Métodos
     public static void iniciarBatalla(){
@@ -94,7 +94,7 @@ public class JuegoBatalla{
     }/*Este método utiliza el total de elementos que posee el arreglo, dado por la cantidad de robots, donde usando la biblioteca Random, se verifica primero 
     que los robots seleccionados existan (que sean distintos de nulo) y ademas que el robot atacante sea diferente del robot atacado, los cuales se generan
     de forma aleatoria, y se enfrentan sin pausa hasta que solo quede uno con vida, y se llama a la función mostrarGanador para mostrar el robot que 
-    aun sigue en pie. */
+    aun sigue en pie.*/
 
     public static void mostrarGanador(){
         for(int indice = 0; indice < arrayRobots.length; indice++){
@@ -104,5 +104,5 @@ public class JuegoBatalla{
             }
         }
     }/*Este método verifica en cada espacio del arreglo, cual es el elemento no vacio, donde para hacer mención de él, se obtiene mediante un get
-    su nombre, establecido previamente. */
+    su nombre, establecido previamente.*/
 }
