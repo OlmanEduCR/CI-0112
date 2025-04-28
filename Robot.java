@@ -1,9 +1,15 @@
 public class Robot{
     //Atributos
     private String nombre; //El nombre del robot.
-    private double puntosVida; //Cantidad de vida (entre 50 y 100)
+    private double puntosVida; //Cantidad de vida (entre 50 y 100).
     private double ataque; //Cantidad de daño que puede causar (entre 10 y 20).
-    private double defensa; //Un porcentaje del ataque que se resta del ataque (el porcentaje oscila entre 5 y 10)
+
+    //Método constructor
+    public Robot(String nombre, double puntosVida, double ataque){
+        this.nombre = nombre;
+        this.ataque = ataque;
+        this.puntosVida = puntosVida;
+    }
 
     //Getters
     public String getNombre(){
@@ -16,10 +22,6 @@ public class Robot{
 
     public double getAtaque(){
         return this.ataque;
-    }
-
-    public double getDefensa(){
-        return this.defensa;
     }
 
     //Setters
@@ -35,23 +37,11 @@ public class Robot{
         this.ataque = ataqueP;
     }
 
-    public void setDefensa(double defensaP){
-        this.defensa = defensaP;
-    }
-
-    //Método constructor
-    public Robot(String nombre, double puntosVida, double ataque, double defensa){
-        this.nombre = nombre;
-        this.ataque = ataque;
-        this.puntosVida = puntosVida;
-        this.defensa = defensa;
-    }
-
     //Métodos
     public void atacar(Robot otroRobot){
-        double puntosNuevosVida = otroRobot.getDefensa() - this.ataque;
+        double puntosNuevosVida = otroRobot.getPuntosVida() - this.ataque;
         otroRobot.setPuntosVida(puntosNuevosVida);
-    }//la función básica de ataque, la cual resta de la vida el ataque y el resultado lo convierte en la nueva vida
+    }//la función básica de ataque, la cual resta de la vida el ataque y el resultado lo convierte en la nueva vida.
 
     public boolean estaVivo(){
         boolean estado = false;
@@ -59,9 +49,5 @@ public class Robot{
             estado = true;
         }
         return estado;
-    }//la funcion principal es determinar el estado del robot que sea solicitado
-
-    /* public double defensa(double defensaDeTurno){
-        double puntosNuevosVida = puntosVida + (defensaDeTurno/100);
-    } */
+    }//la funcion principal es determinar el estado del robot que sea solicitado.
 }

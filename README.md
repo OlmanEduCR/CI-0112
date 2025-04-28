@@ -1,3 +1,3 @@
 # CI-0112
 Tarea 1: Git y Arrays
-Este trabajo ayuda a familiarizarse con el uso de Git y GitHub para la gestion de proyectos de programacion, asi como una idea o referecncia para futuros protyectos, e incluso, futuros cursos.
+Este trabajo me resultó de utilidad, ya que estudiar los arrays es un tema complejo y astracto para una persona que esté empezando con estos temas. El trabajo tiene su dificultad, pero se logra con unas cuantas horas invertidas.
