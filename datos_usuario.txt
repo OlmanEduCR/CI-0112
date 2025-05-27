@@ -1,0 +1,1 @@
+Nombre: 1, Email: 1,Teléfono: 1.Nombre: Olman, Email: lmao,Teléfono: 6565, Tipo: Empleado.Nombre: , Email: ,Teléfono: , Tipo: Cliente.
